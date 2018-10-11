@@ -1,6 +1,10 @@
 package com.lesson.tasks.repository;
 
-public interface TaskRepository {
+import javafx.concurrent.Task;
+import org.springframework.data.repository.CrudRepository;
 
+public interface TaskRepository extends CrudRepository<Task, Long> {
+
+    
 
 }
